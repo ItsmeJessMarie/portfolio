@@ -66,7 +66,7 @@ p {
 }
 
 .content h1 {
-  font-size: 64px;
+  font-size: 60px;
   line-height: 80px;
 }
 
@@ -97,6 +97,7 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 18px 30px;
+  transition: all 100ms ease-in-out;
 }
 
 .btn-branding-outline {
@@ -106,6 +107,12 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 18px 30px;
+  transition: all 100ms ease-in-out;
+}
+
+.img-fluid {
+  display: block;
+  margin: 0 auto;
 }
 
 .project-description {
@@ -126,7 +133,7 @@ p {
   max-height: 65px;
 }
 
-.pr-box {
+.col-lg-7 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,8 +141,12 @@ p {
 
 .project-resume-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.pr-box {
+  margin-bottom: 80px;
 }
 
 .col-md-6.mb-4 {
@@ -148,7 +159,7 @@ p {
 }
 
 .nav-link {
-  margin: 0 10px 0 10px;
+  margin: 0 5px 0 5px;
 }
 
 a.nav-link {
@@ -174,6 +185,14 @@ a.nav-link:hover,
   color: var(--tertiary-color);
 }
 
+.contact-footer {
+  margin-top: 100px;
+}
+
+hr {
+  margin: 0;
+}
+
 footer {
   margin: 60px 0 20px;
 }
@@ -193,6 +212,10 @@ footer .email-link:hover {
   color: var(--branding-color);
 }
 
+footer .social-links {
+  margin: 0 0 30px;
+}
+
 footer .social-links a {
   margin: 0 20px;
   color: var(--branding-color);
@@ -208,8 +231,12 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
-#coding-icon {
-  padding: 10px 14px;
+footer a.coding-icon {
+  padding: 10px 14px !important;
+}
+
+footer a.resume-link {
+  padding: 10px 18px !important;
 }
 
 .profile-links a {
@@ -289,6 +316,12 @@ footer .social-links a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  footer {
+    margin: 40px 0 20px;
+  }
+}
+
 @media (max-width: 576px) {
   .content h1 {
     font-size: 40px;
@@ -303,10 +336,6 @@ footer .social-links a:hover {
     margin-left: 0;
   }
 
-  footer .social-links {
-    margin: 0 0 30px;
-  }
-
   footer .social-links a {
     margin: 0 10px;
   }
@@ -316,7 +345,7 @@ footer .social-links a:hover {
   }
 
   .btn {
-    font-size: 16px;
+    font-size: 14px;
     padding: 16px 28px;
   }
 
@@ -333,19 +362,33 @@ footer .social-links a:hover {
 @media (max-width: 350px) {
   h1,
   .content h1 {
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
   }
 
   .content p {
     font-size: 14px;
+    line-height: 2;
   }
 
   a.nav-link {
     margin: 0;
   }
 
+  .footer-nav {
+    padding: 0;
+  }
+
   footer .social-links a {
+    font-size: 12px;
     margin: 0 5px;
+  }
+
+  .profile-links {
+    font-size: 12px;
   }
 }
